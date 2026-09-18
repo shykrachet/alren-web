@@ -124,7 +124,7 @@ export default function Home() {
               {["COMMUNITY", "OSU!", "BOT"].map((tag) => <span key={tag} className="rounded-md bg-[#1214198c] px-2 py-1 text-[0.68rem] font-extrabold">{tag}</span>)}
             </div>
 
-            <a id="join" className="mt-5 inline-flex min-h-[42px] w-full items-center justify-center gap-2.5 rounded-[11px] bg-[#5865f2] px-4 text-[0.78rem] font-black tracking-[0.06em] transition hover:-translate-y-0.5 hover:bg-[#6975fa] sm:w-auto sm:min-w-[204px]" href="https://discord.com/oauth2/authorize?client_id=704263829562982421&permissions=2550230016&integration_type=0&scope=bot+applications.commands" target="_blank" rel="noreferrer"><FaDiscord className="size-4" /> ADD SERVER</a>
+            <a id="join" className="mt-5 inline-flex min-h-[42px] w-full items-center justify-center gap-2.5 rounded-[11px] bg-[#5865f2] px-4 text-[0.78rem] font-black tracking-[0.06em] transition hover:-translate-y-0.5 hover:bg-[#6975fa] sm:w-auto sm:min-w-[204px]" href="https://discord.com/oauth2/authorize?client_id=1550542538497335336&permissions=8&integration_type=0&scope=bot+applications.commands" target="_blank" rel="noreferrer"><FaDiscord className="size-4" /> ADD SERVER</a>
           </div>
         </section>
 
