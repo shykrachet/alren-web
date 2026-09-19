@@ -1,0 +1,190 @@
+{
+  "locale": "en",
+  "home": {
+    "navCommands": "Commands",
+    "botLabel": "DISCORD BOT",
+    "addServer": "ADD SERVER",
+    "aboutLabel": "ABOUT ALREN",
+    "aboutTitle": "Everything your community needs, in one bot.",
+    "aboutDescription": "Alren helps members discover commands, verify their accounts, and share osu! maps without leaving Discord.",
+    "commandGuide": "COMMAND GUIDE"
+  },
+  "nav": {
+    "home": "Home",
+    "commands": "Commands",
+    "guide": "Guide",
+    "github": "Alren on GitHub",
+    "addDiscord": "Add to Discord"
+  },
+  "guide": {
+    "eyebrow": "ALREN USER GUIDE",
+    "title": "Set up Alren, step by step.",
+    "description": "A practical guide for members and server administrators—from adding the bot to verification, beatmaps, and community alerts.",
+    "memberLabel": "MEMBER",
+    "adminLabel": "ADMIN",
+    "commandLabel": "COMMANDS",
+    "noteLabel": "GOOD TO KNOW",
+    "sections": [
+      {
+        "step": "01",
+        "title": "Add Alren and open the guide",
+        "description": "Add Alren to your Discord server, then open the private command menu. Slash commands may take a few minutes to appear after the bot joins.",
+        "commands": ["/help", "/alrenhelp language:English"],
+        "note": "The help menu is private, so only you can see it.",
+        "audience": "Member"
+      },
+      {
+        "step": "02",
+        "title": "Chat privately with Alren",
+        "description": "Use the slash command for a private reply. Prefix-command replies are sent by DM. Clear the current conversation whenever you want a fresh start.",
+        "commands": ["/alren message:<text>", "/alrenclear"],
+        "note": "Slash replies delete automatically after five minutes.",
+        "audience": "Member"
+      },
+      {
+        "step": "03",
+        "title": "Verify an osu! account",
+        "description": "Members receive a private OAuth button, sign in to osu!, and Alren detects their account automatically. Administrators should configure the verified role first.",
+        "commands": ["/verify", "/verify-role role:@role", "/osuverify-status"],
+        "note": "The Alren role must be above the verified role in Server Settings → Roles.",
+        "audience": "Admin"
+      },
+      {
+        "step": "04",
+        "title": "Post a random beatmap",
+        "description": "Post an osu! beatmap with cover artwork. Optionally choose Ranked, Qualified, Loved, or all statuses and select a game mode.",
+        "commands": ["/map", "/map status:qualified mode:mania"],
+        "note": "Without options, Alren uses the filters saved for the server.",
+        "audience": "Member"
+      },
+      {
+        "step": "05",
+        "title": "Enable the automatic beatmap feed",
+        "description": "Run the settings command in the channel that should receive new beatmaps. Alren saves the channel and default filters for the server.",
+        "commands": ["/osumap-settings status:all mode:any"],
+        "note": "The first setup records the latest map without reposting an old one. Later checks run automatically.",
+        "audience": "Admin"
+      },
+      {
+        "step": "06",
+        "title": "Configure community alerts",
+        "description": "Choose a channel for BN request openings and Mappers' Guild missions, then select one osu! mode or all modes.",
+        "commands": ["/community-alert-settings channel:#alerts bn_mode:Standard (osu!)"],
+        "note": "Alren only posts new changes after setup; it does not replay existing alerts.",
+        "audience": "Admin"
+      },
+      {
+        "step": "07",
+        "title": "Use the all-in-one setup panel",
+        "description": "Administrators can review or configure the verification role, beatmap feed, and community alerts from one private command.",
+        "commands": ["/setup"],
+        "note": "You can provide only the options you want to change; existing settings stay in place.",
+        "audience": "Admin"
+      }
+    ],
+    "permissionsTitle": "Required server permissions",
+    "permissionsDescription": "Place the Alren role high enough in the role list and allow these permissions in every configured channel.",
+    "permissions": ["View Channels", "Send Messages", "Read Message History", "Manage Roles", "Manage Nicknames", "Manage Messages"],
+    "troubleshootingTitle": "Quick troubleshooting",
+    "troubleshooting": [
+      { "title": "Slash commands are missing", "description": "Wait a few minutes, then reload Discord with Ctrl+R. Confirm the bot was invited with the applications.commands scope." },
+      { "title": "Verification role is not awarded", "description": "Move the Alren role above the verified role and confirm that Alren has Manage Roles permission." },
+      { "title": "No feed or alert messages appear", "description": "Run the related settings command again, verify the selected channel, and allow View Channel and Send Messages." }
+    ],
+    "ctaTitle": "Ready to use Alren?",
+    "ctaDescription": "Add the bot to your server or browse the complete command directory.",
+    "ctaInvite": "ADD TO DISCORD",
+    "ctaCommands": "VIEW COMMANDS"
+  },
+  "hero": {
+    "eyebrow": "ALREN COMMAND CENTER",
+    "titleLine1": "Know what",
+    "titleLine2": "to type.",
+    "description": "Every command, shortcut, and prefix alias in one place. Start with the four quick commands, then go deeper when your server needs it.",
+    "slashCommands": "SLASH COMMANDS",
+    "quickStart": "QUICK START",
+    "guide": "GUIDE"
+  },
+  "tip": {
+    "titleBefore": "New to Alren? Type",
+    "titleAfter": "in Discord.",
+    "description": "The guide is private and lets you switch between Thai and English.",
+    "button": "ADD ALREN"
+  },
+  "browser": {
+    "eyebrow": "COMMAND DIRECTORY",
+    "title": "Find your command",
+    "resultSingular": "command shown",
+    "resultPlural": "commands shown",
+    "searchLabel": "Search commands",
+    "searchPlaceholder": "Search commands, aliases, features...",
+    "categoriesLabel": "Command categories",
+    "allCommands": "All commands",
+    "aliasLabel": "ALSO",
+    "commandColumn": "Command",
+    "descriptionColumn": "Description",
+    "emptyTitle": "No commands found",
+    "emptyDescription": "Try another keyword or choose a different category.",
+    "clearFilters": "Clear filters"
+  },
+  "accessLabels": {
+    "Private": "PRIVATE",
+    "Public": "PUBLIC",
+    "Admin": "ADMIN"
+  },
+  "footer": {
+    "brand": "ALREN BOT",
+    "about": "About",
+    "terms": "Terms of Service",
+    "privacy": "Privacy Policy"
+  },
+  "commandGroups": [
+    {
+      "id": "quick-start",
+      "title": "Quick start",
+      "eyebrow": "START HERE",
+      "note": "Short commands for the things you will use most often.",
+      "commands": [
+        { "command": "/help [language]", "description": "Open the private command guide and choose Thai or English.", "aliases": ["/alrenhelp [language]", "!help [th|en]", "!alrenhelp [th|en]"], "access": "Private" },
+        { "command": "/verify [osu_id]", "description": "Verify your osu! account with a private OAuth button. The ID is optional.", "aliases": ["/osuverify [osu_user_id]", "!osuverify [osu_user_id]"], "access": "Private" },
+        { "command": "/map [status] [mode]", "description": "Post a random osu! beatmap with cover artwork in the current channel.", "aliases": ["/osumap [status] [mode]", "!osumap [status] [mode]"], "access": "Public" },
+        { "command": "/setup [verify_role] [beatmap_channel] [map_status] [map_mode] [alerts_channel] [bn_mode]", "description": "View or configure verification, the beatmap feed, and community alerts in one private admin panel. Requires Manage Server.", "access": "Admin" }
+      ]
+    },
+    {
+      "id": "chat-utilities",
+      "title": "Chat & utilities",
+      "eyebrow": "EVERYDAY TOOLS",
+      "note": "Talk with Alren, reset your conversation, or check the bot status.",
+      "commands": [
+        { "command": "/alren message:<text>", "description": "Start a private chat with Alren. Slash replies are deleted automatically; prefix and mention replies are sent by DM.", "aliases": ["!alren <message>", "!chat <message>", "@Alren <message>"], "access": "Private" },
+        { "command": "/alrenclear", "description": "Clear your private Alren chat memory in the current channel.", "aliases": ["!alrenclear", "!reset"], "access": "Private" },
+        { "command": "/alrenhelp [language]", "description": "Open the full styled command guide in Thai or English.", "aliases": ["!alrenhelp [th|en]", "!help [th|en]"], "access": "Private" },
+        { "command": "/ping", "description": "Check whether Alren is online and show its current latency.", "aliases": ["!ping"], "access": "Private" }
+      ]
+    },
+    {
+      "id": "verification",
+      "title": "osu! verification",
+      "eyebrow": "MEMBER ACCESS",
+      "note": "Connect osu! accounts and manage the role awarded to verified members.",
+      "commands": [
+        { "command": "/osuverify [osu_user_id]", "description": "Send a private osu! OAuth button and detect the signed-in account automatically.", "aliases": ["!osuverify [osu_user_id]"], "access": "Private" },
+        { "command": "/osuverify-status", "description": "Show the osu! account linked to you in the current server.", "aliases": ["!osuverify-status"], "access": "Private" },
+        { "command": "/verify-role role:@role", "description": "Choose the role members receive after successful verification.", "aliases": ["!verify-role @role"], "access": "Admin" },
+        { "command": "/verify-role-status", "description": "Show the verification role currently configured for this server.", "aliases": ["!verify-role-status"], "access": "Private" }
+      ]
+    },
+    {
+      "id": "maps-community",
+      "title": "Maps & community",
+      "eyebrow": "OSU! COMMUNITY",
+      "note": "Discover beatmaps and keep server channels updated automatically.",
+      "commands": [
+        { "command": "/osumap [status] [mode]", "description": "Post a random beatmap using saved filters or temporary status and mode options.", "aliases": ["!osumap [status] [mode]"], "access": "Public" },
+        { "command": "/osumap-settings [status] [mode]", "description": "Set the current channel as the automatic beatmap feed and save its default filters.", "aliases": ["!osumap-settings [status] [mode]"], "access": "Admin" },
+        { "command": "/community-alert-settings [channel] [bn_mode]", "description": "Configure BN request and Mappers' Guild mission notifications for the server.", "aliases": ["!community-alert-settings #channel [mode]"], "access": "Admin" }
+      ]
+    }
+  ]
+}

@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 import { FaGithub, FaGlobe, FaInstagram } from "react-icons/fa";
 import { SiteFooter } from "../components/site-footer";
-import avatarImage from "../moaijay.png";
+import avatarImage from "../img/moaijay.png";
 
 export const metadata: Metadata = {
   title: "About — Alren Bot",
@@ -34,7 +35,7 @@ export default function AboutPage() {
             </div>
           </section>
 
-          <a className="mt-7 inline-flex rounded-lg border border-[#4a505b] px-3 py-2 text-xs font-bold text-[#e6e8ec] hover:border-[#8a909a] hover:bg-[#282c33]" href="/">← Back to Home</a>
+          <Link className="mt-7 inline-flex rounded-lg border border-[#4a505b] px-3 py-2 text-xs font-bold text-[#e6e8ec] hover:border-[#8a909a] hover:bg-[#282c33]" href="/">← Back to Home</Link>
         </div>
         </section>
       </div>

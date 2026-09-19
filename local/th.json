@@ -1,0 +1,190 @@
+{
+  "locale": "th",
+  "home": {
+    "navCommands": "คำสั่ง",
+    "botLabel": "บอท DISCORD",
+    "addServer": "เพิ่มเข้าเซิร์ฟเวอร์",
+    "aboutLabel": "เกี่ยวกับ ALREN",
+    "aboutTitle": "ทุกสิ่งที่ชุมชนของคุณต้องการ รวมไว้ในบอทเดียว",
+    "aboutDescription": "Alren ช่วยให้สมาชิกค้นหาคำสั่ง ยืนยันบัญชี และแชร์แผนที่ osu! ได้โดยไม่ต้องออกจาก Discord",
+    "commandGuide": "คู่มือคำสั่ง"
+  },
+  "nav": {
+    "home": "หน้าหลัก",
+    "commands": "คำสั่ง",
+    "guide": "คู่มือ",
+    "github": "Alren บน GitHub",
+    "addDiscord": "เพิ่มเข้า Discord"
+  },
+  "guide": {
+    "eyebrow": "คู่มือใช้งาน ALREN",
+    "title": "ตั้งค่า Alren ทีละขั้นตอน",
+    "description": "คู่มือสำหรับสมาชิกและผู้ดูแลเซิร์ฟเวอร์ ตั้งแต่เพิ่มบอท ยืนยันบัญชี osu! ไปจนถึงฟีด beatmap และการแจ้งเตือนชุมชน",
+    "memberLabel": "สมาชิก",
+    "adminLabel": "แอดมิน",
+    "commandLabel": "คำสั่งที่ใช้",
+    "noteLabel": "ควรรู้",
+    "sections": [
+      {
+        "step": "01",
+        "title": "เพิ่ม Alren และเปิดคู่มือ",
+        "description": "เพิ่ม Alren เข้าเซิร์ฟเวอร์ Discord แล้วเปิดเมนูคำสั่งแบบส่วนตัว หลังบอทเข้าร่วม Slash Command อาจใช้เวลาสักครู่จึงจะแสดง",
+        "commands": ["/help", "/alrenhelp language:ไทย"],
+        "note": "เมนูช่วยเหลือเป็นแบบส่วนตัว มีเพียงคุณที่มองเห็น",
+        "audience": "Member"
+      },
+      {
+        "step": "02",
+        "title": "แชทส่วนตัวกับ Alren",
+        "description": "ใช้ Slash Command เพื่อรับคำตอบแบบส่วนตัว ส่วนคำสั่งแบบ ! จะส่งคำตอบทาง DM และสามารถล้างบทสนทนาเพื่อเริ่มใหม่ได้ทุกเมื่อ",
+        "commands": ["/alren message:<ข้อความ>", "/alrenclear"],
+        "note": "คำตอบจาก Slash Command จะถูกลบอัตโนมัติหลัง 5 นาที",
+        "audience": "Member"
+      },
+      {
+        "step": "03",
+        "title": "ยืนยันบัญชี osu!",
+        "description": "สมาชิกจะได้รับปุ่ม OAuth แบบส่วนตัว จากนั้นเข้าสู่ระบบ osu! แล้ว Alren จะตรวจหาบัญชีให้อัตโนมัติ โดยแอดมินควรตั้งค่ายศยืนยันตัวตนก่อน",
+        "commands": ["/verify", "/verify-role role:@role", "/osuverify-status"],
+        "note": "ยศ Alren ต้องอยู่สูงกว่ายศยืนยันตัวตนใน Server Settings → Roles",
+        "audience": "Admin"
+      },
+      {
+        "step": "04",
+        "title": "สุ่ม Beatmap",
+        "description": "ส่ง beatmap osu! พร้อมรูปปกลงในห้อง สามารถเลือกสถานะ Ranked, Qualified, Loved หรือทั้งหมด รวมถึงเลือกโหมดเกมได้",
+        "commands": ["/map", "/map status:qualified mode:mania"],
+        "note": "หากไม่ระบุตัวเลือก Alren จะใช้ตัวกรองที่เซิร์ฟเวอร์บันทึกไว้",
+        "audience": "Member"
+      },
+      {
+        "step": "05",
+        "title": "เปิดฟีด Beatmap อัตโนมัติ",
+        "description": "รันคำสั่งตั้งค่าในห้องที่ต้องการรับ beatmap ใหม่ ระบบจะบันทึกห้องและตัวกรองเริ่มต้นไว้สำหรับเซิร์ฟเวอร์",
+        "commands": ["/osumap-settings status:all mode:any"],
+        "note": "ครั้งแรกระบบจะจำแผนที่ล่าสุดไว้โดยไม่ส่งแผนที่เก่า จากนั้นจะตรวจรายการใหม่อัตโนมัติ",
+        "audience": "Admin"
+      },
+      {
+        "step": "06",
+        "title": "ตั้งค่าการแจ้งเตือนชุมชน",
+        "description": "เลือกห้องสำหรับแจ้ง BN ที่เปิดรับคำขอและภารกิจใหม่ของ Mappers' Guild แล้วเลือกโหมด osu! ที่ต้องการหรือทุกโหมด",
+        "commands": ["/community-alert-settings channel:#alerts bn_mode:Standard (osu!)"],
+        "note": "Alren จะแจ้งเฉพาะการเปลี่ยนแปลงใหม่หลังตั้งค่า โดยไม่ส่งการแจ้งเตือนเก่าย้อนหลัง",
+        "audience": "Admin"
+      },
+      {
+        "step": "07",
+        "title": "ใช้หน้าตั้งค่ารวม",
+        "description": "แอดมินสามารถดูหรือตั้งค่ายศยืนยันตัวตน ฟีด beatmap และการแจ้งเตือนชุมชนได้จากคำสั่งส่วนตัวเพียงคำสั่งเดียว",
+        "commands": ["/setup"],
+        "note": "เลือกเปลี่ยนเฉพาะตัวเลือกที่ต้องการได้ โดยค่าเดิมส่วนอื่นจะยังคงอยู่",
+        "audience": "Admin"
+      }
+    ],
+    "permissionsTitle": "สิทธิ์ที่บอทต้องใช้",
+    "permissionsDescription": "วางยศ Alren ให้อยู่สูงพอในรายการยศ และอนุญาตสิทธิ์ต่อไปนี้ในทุกห้องที่ตั้งค่าไว้",
+    "permissions": ["ดูห้อง", "ส่งข้อความ", "อ่านประวัติข้อความ", "จัดการยศ", "จัดการชื่อเล่น", "จัดการข้อความ"],
+    "troubleshootingTitle": "แก้ปัญหาเบื้องต้น",
+    "troubleshooting": [
+      { "title": "ไม่พบ Slash Command", "description": "รอสักครู่แล้วกด Ctrl+R เพื่อรีโหลด Discord และตรวจว่าลิงก์เชิญมี scope applications.commands" },
+      { "title": "ไม่ได้รับยศหลังยืนยัน", "description": "ย้ายยศ Alren ให้อยู่เหนือยศยืนยันตัวตน และตรวจว่า Alren มีสิทธิ์จัดการยศ" },
+      { "title": "ฟีดหรือการแจ้งเตือนไม่ส่งข้อความ", "description": "รันคำสั่งตั้งค่าอีกครั้ง ตรวจห้องที่เลือก และอนุญาตสิทธิ์ดูห้องกับส่งข้อความ" }
+    ],
+    "ctaTitle": "พร้อมใช้งาน Alren แล้วหรือยัง?",
+    "ctaDescription": "เพิ่มบอทเข้าเซิร์ฟเวอร์ หรือเปิดดูรายการคำสั่งทั้งหมด",
+    "ctaInvite": "เพิ่มเข้า DISCORD",
+    "ctaCommands": "ดูคำสั่งทั้งหมด"
+  },
+  "hero": {
+    "eyebrow": "ศูนย์รวมคำสั่ง ALREN",
+    "titleLine1": "ทุกคำสั่ง",
+    "titleLine2": "อยู่ที่นี่",
+    "description": "รวมทุกคำสั่ง คำสั่งลัด และคำสั่งแบบ ! ของ Alren ไว้ในที่เดียว เริ่มต้นง่าย ๆ ด้วย 4 คำสั่งหลัก แล้วค่อยเลือกใช้เครื่องมือเพิ่มเติมตามที่เซิร์ฟเวอร์ต้องการ",
+    "slashCommands": "คำสั่ง SLASH",
+    "quickStart": "คำสั่งเริ่มต้น",
+    "guide": "คู่มือ"
+  },
+  "tip": {
+    "titleBefore": "เพิ่งเริ่มใช้ Alren? พิมพ์",
+    "titleAfter": "ใน Discord",
+    "description": "คู่มือจะแสดงแบบส่วนตัว และสลับอ่านได้ทั้งภาษาไทยและอังกฤษ",
+    "button": "เพิ่ม ALREN"
+  },
+  "browser": {
+    "eyebrow": "รายการคำสั่ง",
+    "title": "ค้นหาคำสั่งที่ต้องการ",
+    "resultSingular": "คำสั่งที่พบ",
+    "resultPlural": "คำสั่งที่พบ",
+    "searchLabel": "ค้นหาคำสั่ง",
+    "searchPlaceholder": "ค้นหาคำสั่ง ชื่อย่อ หรือฟีเจอร์...",
+    "categoriesLabel": "หมวดหมู่คำสั่ง",
+    "allCommands": "คำสั่งทั้งหมด",
+    "aliasLabel": "ใช้แบบนี้ได้ด้วย",
+    "commandColumn": "คำสั่ง",
+    "descriptionColumn": "รายละเอียด",
+    "emptyTitle": "ไม่พบคำสั่ง",
+    "emptyDescription": "ลองใช้คำค้นอื่น หรือเลือกหมวดหมู่ใหม่",
+    "clearFilters": "ล้างตัวกรอง"
+  },
+  "accessLabels": {
+    "Private": "ส่วนตัว",
+    "Public": "สาธารณะ",
+    "Admin": "แอดมิน"
+  },
+  "footer": {
+    "brand": "ALREN BOT",
+    "about": "เกี่ยวกับ",
+    "terms": "ข้อกำหนดการใช้งาน",
+    "privacy": "นโยบายความเป็นส่วนตัว"
+  },
+  "commandGroups": [
+    {
+      "id": "quick-start",
+      "title": "เริ่มต้นใช้งาน",
+      "eyebrow": "เริ่มจากตรงนี้",
+      "note": "คำสั่งสั้น ๆ สำหรับฟีเจอร์ที่ใช้งานบ่อยที่สุด",
+      "commands": [
+        { "command": "/help [language]", "description": "เปิดคู่มือคำสั่งแบบส่วนตัว และเลือกอ่านภาษาไทยหรืออังกฤษ", "aliases": ["/alrenhelp [language]", "!help [th|en]", "!alrenhelp [th|en]"], "access": "Private" },
+        { "command": "/verify [osu_id]", "description": "ยืนยันบัญชี osu! ด้วยปุ่ม OAuth แบบส่วนตัว โดยไม่จำเป็นต้องกรอก ID", "aliases": ["/osuverify [osu_user_id]", "!osuverify [osu_user_id]"], "access": "Private" },
+        { "command": "/map [status] [mode]", "description": "สุ่ม beatmap osu! พร้อมรูปปกลงในห้องปัจจุบัน", "aliases": ["/osumap [status] [mode]", "!osumap [status] [mode]"], "access": "Public" },
+        { "command": "/setup [verify_role] [beatmap_channel] [map_status] [map_mode] [alerts_channel] [bn_mode]", "description": "ดูหรือตั้งค่าระบบยืนยันตัวตน ฟีด beatmap และการแจ้งเตือนชุมชนในหน้าจอส่วนตัว ต้องมีสิทธิ์ Manage Server", "access": "Admin" }
+      ]
+    },
+    {
+      "id": "chat-utilities",
+      "title": "แชทและเครื่องมือ",
+      "eyebrow": "เครื่องมือประจำวัน",
+      "note": "คุยกับ Alren ล้างความจำบทสนทนา หรือตรวจสอบสถานะบอท",
+      "commands": [
+        { "command": "/alren message:<text>", "description": "เริ่มแชทส่วนตัวกับ Alren ข้อความตอบกลับจาก Slash จะถูกลบอัตโนมัติ ส่วนคำสั่ง ! และการ Mention จะตอบทาง DM", "aliases": ["!alren <message>", "!chat <message>", "@Alren <message>"], "access": "Private" },
+        { "command": "/alrenclear", "description": "ล้างความจำแชทส่วนตัวของ Alren ในห้องปัจจุบัน", "aliases": ["!alrenclear", "!reset"], "access": "Private" },
+        { "command": "/alrenhelp [language]", "description": "เปิดคู่มือคำสั่งฉบับเต็ม เลือกอ่านได้ทั้งภาษาไทยและอังกฤษ", "aliases": ["!alrenhelp [th|en]", "!help [th|en]"], "access": "Private" },
+        { "command": "/ping", "description": "ตรวจสอบว่า Alren ออนไลน์อยู่หรือไม่ พร้อมแสดงค่า latency ปัจจุบัน", "aliases": ["!ping"], "access": "Private" }
+      ]
+    },
+    {
+      "id": "verification",
+      "title": "ยืนยันบัญชี osu!",
+      "eyebrow": "สิทธิ์ของสมาชิก",
+      "note": "เชื่อมบัญชี osu! และจัดการยศสำหรับสมาชิกที่ยืนยันตัวตนแล้ว",
+      "commands": [
+        { "command": "/osuverify [osu_user_id]", "description": "ส่งปุ่ม OAuth แบบส่วนตัว และตรวจหาบัญชี osu! ที่เข้าสู่ระบบให้อัตโนมัติ", "aliases": ["!osuverify [osu_user_id]"], "access": "Private" },
+        { "command": "/osuverify-status", "description": "แสดงบัญชี osu! ที่เชื่อมกับคุณในเซิร์ฟเวอร์ปัจจุบัน", "aliases": ["!osuverify-status"], "access": "Private" },
+        { "command": "/verify-role role:@role", "description": "เลือกยศที่จะมอบให้สมาชิกเมื่อยืนยันตัวตนสำเร็จ", "aliases": ["!verify-role @role"], "access": "Admin" },
+        { "command": "/verify-role-status", "description": "แสดงยศยืนยันตัวตนที่ตั้งค่าไว้สำหรับเซิร์ฟเวอร์นี้", "aliases": ["!verify-role-status"], "access": "Private" }
+      ]
+    },
+    {
+      "id": "maps-community",
+      "title": "แผนที่และชุมชน",
+      "eyebrow": "ชุมชน OSU!",
+      "note": "ค้นหา beatmap และอัปเดตข่าวสารในห้องเซิร์ฟเวอร์โดยอัตโนมัติ",
+      "commands": [
+        { "command": "/osumap [status] [mode]", "description": "สุ่ม beatmap โดยใช้ตัวกรองที่บันทึกไว้ หรือระบุสถานะและโหมดชั่วคราว", "aliases": ["!osumap [status] [mode]"], "access": "Public" },
+        { "command": "/osumap-settings [status] [mode]", "description": "ตั้งห้องปัจจุบันเป็นฟีด beatmap อัตโนมัติ และบันทึกตัวกรองเริ่มต้น", "aliases": ["!osumap-settings [status] [mode]"], "access": "Admin" },
+        { "command": "/community-alert-settings [channel] [bn_mode]", "description": "ตั้งค่าการแจ้งเตือนคำขอ BN และภารกิจของ Mappers' Guild สำหรับเซิร์ฟเวอร์", "aliases": ["!community-alert-settings #channel [mode]"], "access": "Admin" }
+      ]
+    }
+  ]
+}

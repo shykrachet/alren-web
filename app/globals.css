@@ -1,5 +1,24 @@
 @import "tailwindcss";
 
 @theme inline {
-  --font-sans: var(--font-torus);
+  --font-sans: var(--font-ui);
+}
+
+:root {
+  --font-ui: var(--font-torus);
+  --font-display: var(--font-torus-display);
+}
+
+html[lang="th"] {
+  --font-ui: var(--font-kanit);
+  --font-display: var(--font-kanit-display);
+}
+
+body {
+  font-family: var(--font-ui), sans-serif;
+}
+
+.font-display {
+  font-family: var(--font-display), var(--font-ui), sans-serif;
+  font-weight: 800;
 }
