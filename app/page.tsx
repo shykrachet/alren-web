@@ -1,18 +1,11 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
-import { CommandGuide } from "./components/command-guide";
 import { FaDiscord, FaGithub } from "react-icons/fa";
-<<<<<<< Updated upstream
 import avatarImage from "./img/avatar.jpg";
 import bannerImage from "./img/banner.jpg";
 import { LanguageSwitcher, useLanguage } from "./components/language-switcher";
 import { dictionaries } from "./i18n";
-=======
-import avatarImage from "./avatar.jpg";
-import bannerImage from "./banner.jpg";
->>>>>>> Stashed changes
 
 export default function Home() {
   const language = useLanguage();
@@ -31,16 +24,10 @@ export default function Home() {
             <span>ALREN</span>
           </a>
 
-<<<<<<< Updated upstream
           <div className="flex items-center gap-2 text-[0.82rem] font-bold sm:gap-3">
             <a className="mr-1 hidden w-20 text-center text-[#c7cbd3] hover:text-white md:block" href="/commands">{dictionary.home.navCommands}</a>
             <LanguageSwitcher />
             <a className="inline-flex h-[33px] w-9 items-center justify-center gap-1.5 rounded-lg border border-[#4a505b] text-[0.73rem] text-[#e6e8ec] hover:border-[#8a909a] hover:bg-[#282c33] sm:w-[88px]" href="https://github.com/shykrachet/alren-discord" target="_blank" rel="noreferrer"><FaGithub className="size-4" /><span className="hidden sm:inline">GitHub</span></a>
-=======
-          <div className="flex items-center gap-3 text-[0.82rem] font-bold">
-            <Link className="mr-2 text-[#c7cbd3] hover:text-white" href="/commands">Commands</Link>
-            <a className="inline-flex h-[33px] items-center gap-1.5 rounded-lg border border-[#4a505b] px-2.5 text-[0.73rem] text-[#e6e8ec] hover:border-[#8a909a] hover:bg-[#282c33]" href="https://github.com/shykrachet/alren-discord" target="_blank" rel="noreferrer"><FaGithub className="size-4" /><span className="hidden sm:inline">GitHub</span></a>
->>>>>>> Stashed changes
           </div>
         </nav>
 
@@ -80,17 +67,6 @@ export default function Home() {
           </div>
         </section>
 
-<<<<<<< Updated upstream
-=======
-        <div id="commands" className="border-t border-[#39404b]">
-          <div className="flex flex-wrap items-center justify-between gap-4 py-6 sm:px-4">
-            <p className="text-sm text-[#b4b8c2]">Explore the current slash commands.</p>
-            <Link href="/commands" className="rounded-lg border border-[#4a505b] px-3 py-2 text-sm font-bold text-[#e6e8ec] hover:border-[#8891ff] hover:bg-[#5865f21a]">Full guide & examples →</Link>
-          </div>
-          <CommandGuide />
-        </div>
-
->>>>>>> Stashed changes
         <footer className="flex flex-col gap-4 border-t border-[#39404b] px-0 py-6 text-xs text-[#9da1a9] sm:flex-row sm:items-center sm:justify-between sm:px-4 sm:py-7">
           <span>ALREN BOT</span>
           <nav className="flex flex-wrap items-center gap-x-4 gap-y-2">
